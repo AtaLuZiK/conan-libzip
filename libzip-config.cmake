@@ -1,7 +1,7 @@
 find_path(LIBZIP_INCLUDE_DIR NAMES zip.h zipconf.h PATHS ${CONAN_INCLUDE_DIRS_LIBZIP})
 find_library(LIBZIP_LIBRARY NAMES zip PATHS ${CONAN_LIB_DIRS_LIBZIP})
 
-find_package(zlib REQUIRED)
+find_package(ZLIB REQUIRED)
 
 add_library(libzip INTERFACE IMPORTED)
 target_include_directories(libzip
